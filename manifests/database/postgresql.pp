@@ -12,7 +12,7 @@ class puppetdb::database::postgresql(
   class { '::postgresql::server':
     ip_mask_allow_all_users => '0.0.0.0/0',
     listen_addresses        => $listen_addresses,
-    manage_firewall         => $manage_firewall,
+#    manage_firewall         => $manage_firewall,
   }
 
   # create the puppetdb database
